@@ -1,0 +1,158 @@
+:root {
+  --gold: #f5c542;
+  --red: #d7263d;
+  --black: #050608;
+  --bg-gradient: linear-gradient(135deg, #050608 0%, #d7263d 40%, #f5c542 100%);
+  --text-light: #fdfdfd;
+  --card-bg: rgba(5, 6, 8, 0.85);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+/* Header */
+.bbg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: rgba(5, 6, 8, 0.9);
+  border-bottom: 1px solid rgba(245, 197, 66, 0.4);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.bbg-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.bbg-nav a:hover {
+  color: var(--gold);
+}
+
+/* Hero */
+.bbg-hero {
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  font-size: 1.05rem;
+}
+
+/* Sections */
+.bbg-section {
+  padding: 40px 40px;
+}
+
+.bbg-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: var(--gold);
+}
+
+.contact-list {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+/* Order card */
+.order-section {
+  display: flex;
+  justify-content: center;
+}
+
+.order-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--card-bg);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  width: 100%;
+}
+
+.order-left,
+.order-right {
+  flex: 1 1 280px;
+}
+
+.order-left h3 {
+  margin-bottom: 12px;
+  color: var(--gold);
+}
+
+.easypaisa-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--red);
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.primary-btn {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: var(--gold);
+  color: var(--black);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.bbg-footer {
+  text-align: center;
+  padding: 20px 40px;
+  background: rgba(5, 6, 8, 0.9);
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(245, 197, 66, 0.4);
+}
